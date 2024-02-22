@@ -1,0 +1,395 @@
+@font-face {
+    font-family: "Shabnam-Light";
+    src: url(../font/shabnam/Farsi-Digits/Shabnam-Light-FD.woff2);
+}
+
+@font-face {
+    font-family: "Shabnam-Medium";
+    src: url(../font/shabnam/Farsi-Digits/Shabnam-Medium-FD.woff2);
+}
+
+@font-face {
+    font-family: "Shabnam-Bold";
+    src: url(../font/shabnam/Farsi-Digits/Shabnam-Bold-FD.woff2);
+}
+
+@import "./function";
+
+* {
+    box-sizing: border-box;
+    font-family: "Shabnam-Light";
+}
+
+::selection {
+    background-color: rgb(55, 71, 79);
+    color: white;
+}
+
+header {
+    @include flexDisplay();
+}
+
+body {
+    width: 1216px;
+    margin: auto;
+}
+
+button {
+    @include btnDesign();
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: 0.5;
+}
+
+header {
+    margin-top: 16px;
+    padding: 8px;
+
+    nav {
+        ul {
+            li {
+                display: inline;
+                margin: 0px 8px;
+
+                a {
+                    text-decoration: none;
+                    color: black;
+                }
+            }
+        }
+    }
+
+    img {
+        width: 40px;
+        margin-right: -24px;
+    }
+
+    #phoneMenu {
+        display: none;
+    }
+
+    .searchMenu {
+        img {
+            width: 26px;
+            margin-right: 16px;
+        }
+    }
+}
+
+.headerProduct {
+    @include flexDisplay();
+    margin-top: 56px;
+    height: 80vh;
+
+    img:nth-child(2) {
+        width: 40%
+    }
+
+    .headerTitle {
+        align-items: start;
+
+        span {
+            @include flexDisplay();
+            justify-content: start;
+            gap: 8px;
+
+            img {
+                width: 20px;
+            }
+        }
+
+        h1 {
+            font-size: 56px;
+        }
+
+        h2 {
+            font-size: 40px;
+            font-family: "Shabnam-Light";
+        }
+
+        p {
+            font-size: 16px;
+            text-align: justify;
+            width: 80%;
+            margin-top: 64px;
+        }
+
+        #videoPara {
+            @include flexDisplay();
+            justify-content: start;
+            gap: 8px;
+            font-weight: bold;
+            margin-top: 56px;
+        }
+
+
+    }
+}
+
+.featuresSec {
+    @include gridDisplay(3);
+    box-shadow: 0px 0px 10px #e1e1e1;
+    padding: 40px 32px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    margin-bottom: 64px;
+
+    .featuresItem {
+        @include flexDisplay();
+        justify-content: start;
+        gap: 16px;
+
+        img {
+            width: 72px;
+        }
+
+        p {
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        span {
+            font-size: 14px;
+        }
+    }
+}
+
+.iphoneSec {
+    span {
+        @include flexDisplay();
+        justify-content: start;
+        gap: 8px;
+
+        img {
+            width: 20px;
+        }
+    }
+
+    .iphoneProducts {
+        @include gridDisplay(3);
+        gap: 32px;
+
+        .iphoneItem {
+            box-shadow: 0px 0px 10px #e1e1e1;
+            padding: 16px;
+            border-radius: 8px;
+            -webkit-border-radius: 8px;
+            -moz-border-radius: 8px;
+            -ms-border-radius: 8px;
+            -o-border-radius: 8px;
+
+            img {
+                margin: 16px auto;
+                display: block;
+            }
+
+            p {
+                margin: 32px auto;
+                font-weight: bold;
+                text-align: start;
+                width: 80%;
+            }
+        }
+    }
+}
+
+.iphoneMagSec {
+    margin-top: 56px;
+
+    .iphoneMag {
+        @include flexDisplay();
+        width: 100%;
+        gap: 32px;
+
+        img {
+            width: 35.5%;
+            margin: 16px 0px;
+            cursor: pointer;
+            transition: all 0.3s;
+            -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            -ms-transition: all 0.3s;
+            -o-transition: all 0.3s;
+
+            &:hover {
+                opacity: 0.7;
+            }
+        }
+
+        div {
+            img {
+                width: 100%;
+                margin: 16px 0px;
+                cursor: pointer;
+                transition: all 0.3s;
+                -webkit-transition: all 0.3s;
+                -moz-transition: all 0.3s;
+                -ms-transition: all 0.3s;
+                -o-transition: all 0.3s;
+
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    main {
+        padding: 0px 64px;
+    }
+
+    header {
+        padding: 16px 40px;
+        margin: 0px;
+        box-shadow: 0px 10px 56px #dedede;
+    }
+
+    h1 {
+        font-size: 56px;
+    }
+
+    h2 {
+        font-size: 48px;
+    }
+
+    span {
+        font-size: 32px;
+
+        img {
+            width: 40px !important;
+            margin-bottom: 16px;
+        }
+    }
+
+    header {
+        position: sticky;
+        top: 0;
+        right: 0;
+        background-color: white;
+
+        img {
+            width: 72px;
+        }
+
+        #phoneMenu {
+            width: 72px;
+            display: block;
+        }
+
+        nav {
+            display: none;
+        }
+
+        div {
+            display: none;
+        }
+    }
+
+    .headerProduct {
+        flex-direction: column;
+
+        #appleWatchImg {
+            width: 80%;
+        }
+
+        .headerTitle {
+            width: 100%;
+            margin-top: 40px;
+
+            span {
+                font-size: 32px;
+                line-height: 1.5;
+            }
+
+            h1 {
+                font-size: 80px;
+                line-height: 1.5;
+            }
+
+            h2 {
+                font-size: 72px;
+                line-height: 1.5;
+            }
+
+            p {
+                width: 100%;
+                font-size: 40px;
+                line-height: 1.5;
+            }
+        }
+    }
+
+    .featuresSec {
+        margin-top: 1600px;
+        grid-template-columns: repeat(1, auto);
+        gap: 32px;
+
+        .featuresItem {
+            width: 100%;
+
+            img {
+                width: 104px;
+            }
+
+            div {
+                width: 100%;
+
+                p {
+                    font-size: 32px;
+                }
+
+                span {
+                    font-size: 32px;
+                }
+            }
+        }
+    }
+
+    .iphoneSec {
+        .iphoneProducts {
+            grid-template-columns: repeat(1, auto);
+
+            .iphoneItem {
+                padding: 64px 0px 16px 0px;
+
+                p {
+                    font-size: 48px;
+                }
+
+                img {
+                    width: 40%;
+                }
+
+                button {
+                    font-size: 40px;
+                    width: 100%;
+                    margin: 32px 0px 0px 0px !important;
+                    height: 104px;
+
+                }
+            }
+        }
+    }
+
+    .iphoneMagSec {
+        .iphoneMag {
+            flex-direction: column;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+}

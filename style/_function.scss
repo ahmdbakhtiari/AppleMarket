@@ -1,0 +1,25 @@
+@mixin flexDisplay(){
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin gridDisplay($col){
+    display: grid;
+    grid-template-columns: repeat($col , auto);
+    gap: 16px;
+}
+
+@mixin btnDesign(){
+    padding: 8px 16px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    color: black;
+    background-color: #f4f4f4;
+    border: 1px solid rgba(153, 153, 153, 0.4);
+    margin-right: 32px;
+    cursor: pointer;
+}

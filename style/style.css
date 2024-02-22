@@ -1,0 +1,348 @@
+@font-face {
+  font-family: "Shabnam-Light";
+  src: url(../font/shabnam/Farsi-Digits/Shabnam-Light-FD.woff2);
+}
+@font-face {
+  font-family: "Shabnam-Medium";
+  src: url(../font/shabnam/Farsi-Digits/Shabnam-Medium-FD.woff2);
+}
+@font-face {
+  font-family: "Shabnam-Bold";
+  src: url(../font/shabnam/Farsi-Digits/Shabnam-Bold-FD.woff2);
+}
+* {
+  box-sizing: border-box;
+  font-family: "Shabnam-Light";
+}
+
+::-moz-selection {
+  background-color: rgb(55, 71, 79);
+  color: white;
+}
+
+::selection {
+  background-color: rgb(55, 71, 79);
+  color: white;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body {
+  width: 1216px;
+  margin: auto;
+}
+
+button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  color: black;
+  background-color: #f4f4f4;
+  border: 1px solid rgba(153, 153, 153, 0.4);
+  margin-right: 32px;
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 0.5;
+}
+
+header {
+  margin-top: 16px;
+  padding: 8px;
+}
+header nav ul li {
+  display: inline;
+  margin: 0px 8px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+header img {
+  width: 40px;
+  margin-right: -24px;
+}
+header #phoneMenu {
+  display: none;
+}
+header .searchMenu img {
+  width: 26px;
+  margin-right: 16px;
+}
+
+.headerProduct {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 56px;
+  height: 80vh;
+}
+.headerProduct img:nth-child(2) {
+  width: 40%;
+}
+.headerProduct .headerTitle {
+  align-items: start;
+}
+.headerProduct .headerTitle span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: start;
+  gap: 8px;
+}
+.headerProduct .headerTitle span img {
+  width: 20px;
+}
+.headerProduct .headerTitle h1 {
+  font-size: 56px;
+}
+.headerProduct .headerTitle h2 {
+  font-size: 40px;
+  font-family: "Shabnam-Light";
+}
+.headerProduct .headerTitle p {
+  font-size: 16px;
+  text-align: justify;
+  width: 80%;
+  margin-top: 64px;
+}
+.headerProduct .headerTitle #videoPara {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: start;
+  gap: 8px;
+  font-weight: bold;
+  margin-top: 56px;
+}
+
+.featuresSec {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 16px;
+  box-shadow: 0px 0px 10px #e1e1e1;
+  padding: 40px 32px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  margin-bottom: 64px;
+}
+.featuresSec .featuresItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: start;
+  gap: 16px;
+}
+.featuresSec .featuresItem img {
+  width: 72px;
+}
+.featuresSec .featuresItem p {
+  font-weight: bold;
+  font-size: 16px;
+}
+.featuresSec .featuresItem span {
+  font-size: 14px;
+}
+
+.iphoneSec span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: start;
+  gap: 8px;
+}
+.iphoneSec span img {
+  width: 20px;
+}
+.iphoneSec .iphoneProducts {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 16px;
+  gap: 32px;
+}
+.iphoneSec .iphoneProducts .iphoneItem {
+  box-shadow: 0px 0px 10px #e1e1e1;
+  padding: 16px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+.iphoneSec .iphoneProducts .iphoneItem img {
+  margin: 16px auto;
+  display: block;
+}
+.iphoneSec .iphoneProducts .iphoneItem p {
+  margin: 32px auto;
+  font-weight: bold;
+  text-align: start;
+  width: 80%;
+}
+
+.iphoneMagSec {
+  margin-top: 56px;
+}
+.iphoneMagSec .iphoneMag {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 32px;
+}
+.iphoneMagSec .iphoneMag img {
+  width: 35.5%;
+  margin: 16px 0px;
+  cursor: pointer;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+.iphoneMagSec .iphoneMag img:hover {
+  opacity: 0.7;
+}
+.iphoneMagSec .iphoneMag div img {
+  width: 100%;
+  margin: 16px 0px;
+  cursor: pointer;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+}
+.iphoneMagSec .iphoneMag div img:hover {
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 600px) {
+  main {
+    padding: 0px 64px;
+  }
+  header {
+    padding: 16px 40px;
+    margin: 0px;
+    box-shadow: 0px 10px 56px #dedede;
+  }
+  h1 {
+    font-size: 56px;
+  }
+  h2 {
+    font-size: 48px;
+  }
+  span {
+    font-size: 32px;
+  }
+  span img {
+    width: 40px !important;
+    margin-bottom: 16px;
+  }
+  header {
+    position: sticky;
+    top: 0;
+    right: 0;
+    background-color: white;
+  }
+  header img {
+    width: 72px;
+  }
+  header #phoneMenu {
+    width: 72px;
+    display: block;
+  }
+  header nav {
+    display: none;
+  }
+  header div {
+    display: none;
+  }
+  .headerProduct {
+    flex-direction: column;
+  }
+  .headerProduct #appleWatchImg {
+    width: 80%;
+  }
+  .headerProduct .headerTitle {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .headerProduct .headerTitle span {
+    font-size: 32px;
+    line-height: 1.5;
+  }
+  .headerProduct .headerTitle h1 {
+    font-size: 80px;
+    line-height: 1.5;
+  }
+  .headerProduct .headerTitle h2 {
+    font-size: 72px;
+    line-height: 1.5;
+  }
+  .headerProduct .headerTitle p {
+    width: 100%;
+    font-size: 40px;
+    line-height: 1.5;
+  }
+  .featuresSec {
+    margin-top: 1600px;
+    grid-template-columns: repeat(1, auto);
+    gap: 32px;
+  }
+  .featuresSec .featuresItem {
+    width: 100%;
+  }
+  .featuresSec .featuresItem img {
+    width: 104px;
+  }
+  .featuresSec .featuresItem div {
+    width: 100%;
+  }
+  .featuresSec .featuresItem div p {
+    font-size: 32px;
+  }
+  .featuresSec .featuresItem div span {
+    font-size: 32px;
+  }
+  .iphoneSec .iphoneProducts {
+    grid-template-columns: repeat(1, auto);
+  }
+  .iphoneSec .iphoneProducts .iphoneItem {
+    padding: 64px 0px 16px 0px;
+  }
+  .iphoneSec .iphoneProducts .iphoneItem p {
+    font-size: 48px;
+  }
+  .iphoneSec .iphoneProducts .iphoneItem img {
+    width: 40%;
+  }
+  .iphoneSec .iphoneProducts .iphoneItem button {
+    font-size: 40px;
+    width: 100%;
+    margin: 32px 0px 0px 0px !important;
+    height: 104px;
+  }
+  .iphoneMagSec .iphoneMag {
+    flex-direction: column;
+  }
+  .iphoneMagSec .iphoneMag img {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */
