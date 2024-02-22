@@ -95,6 +95,7 @@ header .searchMenu img {
 }
 .headerProduct .headerTitle {
   align-items: start;
+  margin-right: 64px;
 }
 .headerProduct .headerTitle span {
   display: flex;

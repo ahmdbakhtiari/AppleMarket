@@ -93,7 +93,7 @@ header {
 
     .headerTitle {
         align-items: start;
-
+        margin-right: 64px;
         span {
             @include flexDisplay();
             justify-content: start;
