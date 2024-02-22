@@ -59,6 +59,10 @@ h6 {
   line-height: 0.5;
 }
 
+h2 {
+  font-size: 48px;
+}
+
 header {
   margin-top: 16px;
   padding: 8px;
