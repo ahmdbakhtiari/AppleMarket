@@ -288,6 +288,7 @@ header .searchMenu img {
   .headerProduct .headerTitle {
     width: 100%;
     margin-top: 40px;
+    margin-right: 0px;
   }
   .headerProduct .headerTitle span {
     font-size: 32px;
